@@ -13,18 +13,24 @@ namespace Day3PracticeActivity
 
             string name = Console.ReadLine().ToLower(); // Allow user to enter name and store name in variable
 
-            // Is name equal to "Jen"?
+            // Is name equal to "Jen"? 
 
             bool isJen = name.Equals("jen");
+            bool isSarah = name.Equals("sarah"); // OR if name equal to "Sarah"?
 
             if (isJen)
             {
-                Console.WriteLine("That's my name too!");
+                Console.WriteLine("That's my name too!"); // Execute if isJen is TRUE ; then end code
+            }
+
+            else if (isSarah)
+            {
+                Console.WriteLine("That's my daughter's name!"); // Execute if isJen is FALSE ; then end code
             }
 
             else
             {
-                Console.WriteLine("Hi!");
+                Console.WriteLine("Hi " + name + "!"); // Execute if BOTH isJen AND isSarah are FALSE ; then end code
             }
             
 
